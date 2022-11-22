@@ -10,7 +10,9 @@ const writeToFile = (fileName, data) => {
 
             resolve({
                 ok: true,
-                message: 'File created!'
+
+                message: 'File created successfully'
+
             });
         });
     });
