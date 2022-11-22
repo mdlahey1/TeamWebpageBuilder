@@ -71,7 +71,7 @@ const generateHTML = (employeesArr) => {
         <link rel="stylesheet" href="style.css"/>
     </head>
     <div>
-        <h1 class="title is-1 has-text-centered" id="header">My Team</h1>
+        <h1 class="title is-1 has-text-centered" id="header">Team Profile</h1>
     </div>
     <body>
         <div>

@@ -70,8 +70,8 @@ const employeePrompt = () => {
         name: "choice",
         message: "What type of employee do you wish to add?",
         choices: [
-          "Add intern",
-          "Add engineer",
+          "Add Intern",
+          "Add Engineer",
           "Finish building out team",
         ],
       },
