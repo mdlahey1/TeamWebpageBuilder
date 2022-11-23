@@ -6,6 +6,10 @@ const Manager = require("./lib/Manager.js");
 const generateHTML = require("./src/htmlTemplate.js");
 const writeToFile = require("./utils/siteGenerator.js");
 
+console.clear();
+console.log("---------------------------------------------");
+console.log("Team Portfolio Website Generator")
+console.log("---------------------------------------------");
 
 const employees = [];
 
@@ -77,14 +81,14 @@ const employeePrompt = () => {
       },
     ])
     .then(({ choice }) => {
-      if (choice === "Add intern") {
+      if (choice === "Add Intern") {
         return internPrompt()
         .then((internData) => {
             const intern = new Intern(internData.name, internData.id, internData.email, internData.school);
             employees.push(intern);
             return employeePrompt();
         });
-      } else if (choice === "Add engineer") {
+      } else if (choice === "Add Engineer") {
         return engineerPrompt()
         .then((engineerData) => {
             const engineer = new Engineer(engineerData.name, engineerData.id, engineerData.email, engineerData.github);
