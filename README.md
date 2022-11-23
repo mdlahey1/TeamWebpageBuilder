@@ -51,8 +51,6 @@ THEN I exit the application and the HTML is generated
   
 `npm install inquirer`
 
-`npm install email-validator`
-
 `npm install jest --save-dev`
   
 ## Usage
